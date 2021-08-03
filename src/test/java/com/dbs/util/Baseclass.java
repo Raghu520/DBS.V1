@@ -12,14 +12,15 @@ import org.testng.annotations.Parameters;
 
 public class Baseclass {
 	public static WebDriver driver;
+	public ConfigReader Conr;
 	
 	public Baseclass()
 	{
-		
+		 Conr=new ConfigReader();
 	}
 	
 	@BeforeClass
-	@Parameters("Chrome")
+	@Parameters("Browser")
 	public void setup( String br)
 	{
 		if(br.equals("Chrome"))
@@ -42,7 +43,7 @@ public class Baseclass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://demo.guru99.com/V1/index.php");
+		driver.get(Conr.datareader("URL"));
 	}
 	@AfterClass
 	public void teardown()

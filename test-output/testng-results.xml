@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11157" started-at="2021-08-03T08:38:34Z" finished-at="2021-08-03T08:38:45Z">
+  <suite name="Suite" duration-ms="8053" started-at="2021-08-03T10:23:19Z" finished-at="2021-08-03T10:23:27Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="11157" started-at="2021-08-03T08:38:34Z" finished-at="2021-08-03T08:38:45Z">
+    <test name="LoginTest" duration-ms="8053" started-at="2021-08-03T10:23:19Z" finished-at="2021-08-03T10:23:27Z">
       <class name="com.dbs.testcase.LoginTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="setup" is-config="true" duration-ms="9324" started-at="2021-08-03T08:38:34Z" finished-at="2021-08-03T08:38:44Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="setup" is-config="true" duration-ms="6308" started-at="2021-08-03T10:23:19Z" finished-at="2021-08-03T10:23:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginverfication()[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="loginverfication" duration-ms="1599" started-at="2021-08-03T08:38:44Z" finished-at="2021-08-03T08:38:45Z">
+        <test-method status="PASS" signature="loginverfication()[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="loginverfication" duration-ms="1560" started-at="2021-08-03T10:23:26Z" finished-at="2021-08-03T10:23:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginverfication -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="teardown" is-config="true" duration-ms="190" started-at="2021-08-03T08:38:45Z" finished-at="2021-08-03T08:38:45Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.dbs.testcase.LoginTest@6a4f787b]" name="teardown" is-config="true" duration-ms="147" started-at="2021-08-03T10:23:27Z" finished-at="2021-08-03T10:23:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

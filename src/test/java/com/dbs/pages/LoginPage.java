@@ -25,8 +25,8 @@ public class LoginPage extends Baseclass {
 	
 	public void login()
 	{
-		uid.sendKeys("mngr344409");
-		password.sendKeys("apYvUqY");
+		uid.sendKeys(Conr.datareader("UName"));
+		password.sendKeys(Conr.datareader("password"));
 		Login.click();
 	}
 	public String  gettitle()
