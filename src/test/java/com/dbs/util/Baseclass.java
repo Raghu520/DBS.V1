@@ -2,6 +2,8 @@ package com.dbs.util;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,6 +15,8 @@ import org.testng.annotations.Parameters;
 public class Baseclass {
 	public static WebDriver driver;
 	public ConfigReader Conr;
+	public static Logger logger;
+	
 	
 	public Baseclass()
 	{
@@ -23,6 +27,9 @@ public class Baseclass {
 	@Parameters("Browser")
 	public void setup( String br)
 	{
+		logger = Logger.getLogger("DBS Banking");
+		PropertyConfigurator.configure("./Config/Log4j.properties");
+		
 		if(br.equals("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
